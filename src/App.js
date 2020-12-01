@@ -5,6 +5,7 @@ import Saver from './Saver';
 
 
 
+
 function App() {
   const [time, setTime]= useState({ms:0,s:0,m:0,h:0});
   const [interv,setInterv] = useState ();
@@ -52,6 +53,11 @@ function App() {
   };
 
   const resume = () => start();
+
+
+  const save = () =>{
+    console.log({setStatus});
+  };
     
   
 
@@ -68,19 +74,15 @@ function App() {
 
           <div className="stopwatch"></div>
               < Display time={time}/>
-              <Btn status={status} resume= {resume} reset={reset} stop={stop} start={start}/>
+              <Btn status={status} resume= {resume} reset={reset} stop={stop} save={save} start={start}/>
       </div>
 
 
-    <div className= "saved">
-      <header> 
-        <h2>Saved Times</h2>
-      </header>
-    </div>
-      
-    </div>  
-
-   
+      <div className="paska">
+        < Saver />
+      </div>
+        
+  </div>    
   );
   
 }
