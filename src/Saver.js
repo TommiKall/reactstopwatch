@@ -1,4 +1,7 @@
 import React, {useState} from 'react';
+import time from './App';
+
+
 
 
 
@@ -13,6 +16,8 @@ const Saver = () => {
     }
     setItems([...items, value]);
     setValue("");
+    
+    
   };
 
   const handleChange = (e) => {
@@ -27,6 +32,13 @@ const Saver = () => {
     setItems(filtered);
   };
 
+  const save = () =>{    
+    //console.log({setTime});
+    //console.log(setInterv(event.target.value));
+    console.log(time);  
+    
+  };
+
   return (
     <div>
       <h3>Identifier for time</h3>
@@ -37,17 +49,19 @@ const Saver = () => {
         placeholder="Text.."
       />
 
-      <button onClick={() => saveItem()}>Save</button>
+      <button onClick={() => saveItem()}>Save</button>  
+      
 
       <button onClick={() => setItems([])}>Reset</button>
+     
+      
       
       {items.length > 0 && <p>Remove time with click!</p>}
       {items.length === 0 && <p>No times saved!</p>}
 
       <ul>
         {items.map((item, index) => {
-          return (
-            //<ListanJasen key={index} item={item} clickCallback={removeItem} />
+          return (            
              <li onClick={(e) => removeItem(e)} key={index}>
                {item}
             </li>

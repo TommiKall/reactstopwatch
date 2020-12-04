@@ -19,9 +19,9 @@ function App() {
     setInterv(setInterval(run,10));
   };
 
-
-  var updatedMs= time.ms, updatedS=time.s,updatedM=time.m, updatedH=time.h;
   //kellon toiminta
+  var updatedMs= time.ms, updatedS=time.s,updatedM=time.m, updatedH=time.h;
+  
   const run = () => {
     if( updatedS === 60){
       updatedM++;
@@ -43,6 +43,7 @@ function App() {
   const stop= () => {
     clearInterval(interv);
     setStatus(2);
+    
   };
 
 
@@ -55,31 +56,33 @@ function App() {
   const resume = () => start();
 
 
-  const save = () =>{
-    console.log({setStatus});
-  };
+ 
+ 
+ const save = () => {
+   console.log(time);
+   
+ };
+   
     
   
-
-
+  const testi = ({time})=> <h1>{time}</h1>
+  
+  
   return (
-    <div style={{ textAlign: 'left'}}>
+    <div>
       <header>
         <h1>Stopwatch/Tommi Kalliomäki</h1>
-      </header> 
-      
-      <div className="main-section">
-
-        <div className="clock-holder"></div>
-
-          <div className="stopwatch"></div>
+      </header>             
+          <div className="stopwatch">
               < Display time={time}/>
               <Btn status={status} resume= {resume} reset={reset} stop={stop} save={save} start={start}/>
-      </div>
+            </div>
 
-
-      <div className="paska">
-        < Saver />
+      <div className="saver">       
+        < Saver />  
+        <button onClick={testi}>testisave</button>
+        
+        
       </div>
         
   </div>    
