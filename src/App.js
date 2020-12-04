@@ -63,11 +63,7 @@ function App() {
    
  };
    
-    
-  
-  const testi = ({time})=> <h1>{time}</h1>
-  
-  
+     
   return (
     <div>
       <header>
@@ -80,7 +76,7 @@ function App() {
 
       <div className="saver">       
         < Saver />  
-        <button onClick={testi}>testisave</button>
+        
         
         
       </div>
