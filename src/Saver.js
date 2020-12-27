@@ -40,19 +40,19 @@ const Saver = () => {
   };
 
   return (
-    <div>
+    <div className="otsikko">
       <h3>Identifier for time</h3>
 
-      <input
+      <input className="input"
         value={value}
         onChange={(e) => handleChange(e)}
         placeholder="Text.."
       />
 
-      <button onClick={() => saveItem()}>Save</button>  
+      <button className="button" onClick={() => saveItem()}>Save</button>  
       
 
-      <button onClick={() => setItems([])}>Reset</button>
+      <button className="button" onClick={() => setItems([])}>Reset</button>
      
       
       

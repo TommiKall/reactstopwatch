@@ -2,6 +2,9 @@ import React, {useState} from 'react';
 import Btn from './Btn';
 import Display from './Display';
 import Saver from './Saver';
+import './App.css';
+
+
 
 
 
@@ -60,16 +63,24 @@ function App() {
  
  const save = () => {
    console.log(time);
-   
+  
  };
+
+ function save1 ({time}){
+   return(
+     <div>
+       {time.map((time,index) =>(
+         <time number={index} interval={time}/>
+       ) )}
+     </div>
+   )
+ }
    
      
   return (
-    <div>
-      <header>
-        <h1>Stopwatch/Tommi Kalliomäki</h1>
-      </header>             
+    <div>                 
           <div className="stopwatch">
+             <h1 className="otsikko">Stopwatch/Tommi Kalliomäki</h1>
               < Display time={time}/>
               <Btn status={status} resume= {resume} reset={reset} stop={stop} save={save} start={start}/>
             </div>

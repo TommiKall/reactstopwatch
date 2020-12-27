@@ -1,0 +1,74 @@
+
+.otsikko{
+    position: absolute;
+    color:#4CAF50;
+    font-size: 40px;
+    padding-left: 6%;
+}
+
+.display{
+    padding-left: 18%;
+    margin-top: 100px;
+    color: #4CAF50;
+    height: 30px;
+    border-color: #4CAF50;
+    font-size: 40px;
+    
+}
+
+.button{
+        
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 90px;
+    height: 30px;
+    background-color: black;
+    color: #4CAF50;
+    margin-top: 40px;
+    align-items: center;
+    
+
+}
+
+.button:hover {
+    background-color: #4CAF50; 
+    color: white;
+  }
+.allbuttons{
+    padding-left: 15%;
+    position: absolute;
+}
+
+.input{
+    width: 300px;
+    text-align: center;
+    color: #4CAF50;
+
+}
+
+
+
+.stopwatch{
+  height: 100%;
+  width: 50%;
+  padding-left: 10%;
+  position: absolute;
+  /*background-color: black;*/
+  padding-top: 5%;
+  
+
+
+   
+}
+
+.saver{
+    height: 100%;
+    width: 50%;
+    left: 50%;
+    position: absolute;
+    /*background-color:black;*/
+    padding-top: 4%;
+    padding-left: 15%;
+  
+}
