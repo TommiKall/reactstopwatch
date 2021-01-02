@@ -4,7 +4,7 @@ import Display from './Display';
 import Saver from './Saver';
 import './App.css';
 
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 
 
 
