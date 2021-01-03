@@ -8,7 +8,7 @@ import React, {useState} from 'react';
 const Saver = () => {
   const [items, setItems] = useState([]);
   const [value, setValue] = useState("");
-  const [time]= useState({ms:0,s:0,m:0,h:0});
+  const [time,setTime]= useState({ms:0,s:0,m:0,h:0});
 
   const saveItem = () => {
     // lisää listaan
@@ -36,9 +36,11 @@ const Saver = () => {
   const save = () =>{    
     //console.log({setTime});
     //console.log(setInterv(event.target.value));
-    console.log(time);  
+    console.log(this.setTime);  
     
   };
+  
+    
 
   return (
     <div className="otsikko">

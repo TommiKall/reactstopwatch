@@ -4,6 +4,7 @@ import Display from './Display';
 import Saver from './Saver';
 import './App.css';
 
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 
 
@@ -63,20 +64,20 @@ function App() {
  
  const save = () => {
    console.log(time);
+   console.log(JSON.stringify(time))
+   
   
  };
 
- /*function save1 ({time}){
-   return(
-     <div>
-       {time.map((time,index) =>(
-         <time number={index} interval={time}/>
-       ) )}
-     </div>
-   )
- }*/
-   
-     
+ const save2 = JSON.stringify(time);
+
+ 
+
+
+
+
+
+
   return (
     <div>                 
           <div className="stopwatch">
@@ -87,6 +88,9 @@ function App() {
 
       <div className="saver">       
         < Saver />  
+        <p>{save2}</p>
+
+        
         
         
         
