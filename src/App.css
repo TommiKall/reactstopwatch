@@ -11,18 +11,28 @@
 .display{
     display: flex;
     justify-content: center;
-    color: #4CAF50;
-    border-color: #4CAF50;
+    background-color: black;
+    color: white;
+    width: 15%;
+    margin-left: 40%;
+    margin-right: 40%;
     
-    
-
-
-
-
     
 }
 
 .button{
+    
+    transition-duration: 0.4s;
+    width: 15%;
+    margin-left: 40%;
+    background-color: rgba(146, 146, 146, 0.877);
+    color: black;   
+    display: inline-block;
+    
+    
+
+}
+.buttonsaver{
     
     transition-duration: 0.4s;
     width: 15%;
@@ -36,14 +46,22 @@
     color: white;
   }
 
+  .buttonsaver:hover {
+    background-color: #4CAF50; 
+    color: white;
+  }
 
 
 .input{
     
     text-align: center;
-    color: #4CAF50;
     width: 20%;
 
+}
+
+/*poistaa bulletit*/
+ul{
+    list-style: none;
 }
 
 

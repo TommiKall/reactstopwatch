@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import time from './App';
+
 
 
 
@@ -8,6 +8,7 @@ import time from './App';
 const Saver = () => {
   const [items, setItems] = useState([]);
   const [value, setValue] = useState("");
+  const [time]= useState({ms:0,s:0,m:0,h:0});
 
   const saveItem = () => {
     // lisää listaan
@@ -49,10 +50,12 @@ const Saver = () => {
         placeholder="Text.."
       />
 
-      <button className="button" onClick={() => saveItem()}>Save</button>  
+      <button className="buttonsaver" onClick={() => saveItem()}>Save</button>  
       
 
-      <button className="button" onClick={() => setItems([])}>Reset</button>
+      <button className="buttonsaver" onClick={() => setItems([])}>Reset</button>
+
+      <button className="buttonsaver" onClick={() => save([])}>testisave</button>
      
       
       

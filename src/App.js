@@ -66,7 +66,7 @@ function App() {
   
  };
 
- function save1 ({time}){
+ /*function save1 ({time}){
    return(
      <div>
        {time.map((time,index) =>(
@@ -74,7 +74,7 @@ function App() {
        ) )}
      </div>
    )
- }
+ }*/
    
      
   return (
