@@ -61,17 +61,48 @@ function App() {
 
 
  
- 
+ //erilaisia väsäyksiä saada aika tallentumaan, mutta ei onnistunut propsien tai eventien avulla itselläni
+ // const save sai sen näkymään consolelogissa, funktiolla sain sen ruudulle päivittymään
  const save = () => {
    console.log(time);
-   console.log(JSON.stringify(time))
+   JSON.stringify(time)
    
   
  };
 
  const save2 = JSON.stringify(time);
 
- 
+
+   
+  const save4 = ({time}) => {
+    return(
+      console.log(JSON.stringify(time))
+    );
+  }
+
+
+  const sata = ({time}) => {
+    return(
+    
+      JSON.stringify(time)
+      
+    );
+  }
+
+  function Savedtime() {
+    return(
+      <h3 className="time">{JSON.stringify(time.h)}:{JSON.stringify(time.m)}:{JSON.stringify(time.s)}:{JSON.stringify(time.ms)}</h3>
+    );
+  }
+
+    
+
+
+
+
+
+
+ //testei
 
 
 
@@ -87,11 +118,12 @@ function App() {
             </div>
 
       <div className="saver">       
-        < Saver />  
-        <p>{save2}</p>
+        < Saver /> 
+        <p>{sata}</p>
+        <p>{Savedtime}</p>
+        <Savedtime/>
+        
 
-        
-        
         
         
       </div>

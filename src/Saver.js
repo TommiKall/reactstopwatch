@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
-
-
-
+import time from './App';
+import Display from './Display';
+import Savedtime from './App';
 
 
 
 const Saver = () => {
   const [items, setItems] = useState([]);
   const [value, setValue] = useState("");
-  const [time,setTime]= useState({ms:0,s:0,m:0,h:0});
+  
 
   const saveItem = () => {
     // lisää listaan
@@ -33,12 +33,8 @@ const Saver = () => {
     setItems(filtered);
   };
 
-  const save = () =>{    
-    //console.log({setTime});
-    //console.log(setInterv(event.target.value));
-    console.log(this.setTime);  
-    
-  };
+  
+  
   
     
 
@@ -57,9 +53,7 @@ const Saver = () => {
 
       <button className="buttonsaver" onClick={() => setItems([])}>Reset</button>
 
-      <button className="buttonsaver" onClick={() => save([])}>testisave</button>
      
-      
       
       {items.length > 0 && <p>Remove time with click!</p>}
       {items.length === 0 && <p>No times saved!</p>}
@@ -68,12 +62,12 @@ const Saver = () => {
         {items.map((item, index) => {
           return (            
              <li onClick={(e) => removeItem(e)} key={index}>
-               {item}
-            </li>
+               {item}            
+            </li>           
           );
-        })}
+        })}        
       </ul>
-
+      
     
     </div>
   );
