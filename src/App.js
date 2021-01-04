@@ -3,6 +3,7 @@ import Btn from './Btn';
 import Display from './Display';
 import Saver from './Saver';
 import './App.css';
+import Lista from './Lista';
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
@@ -95,15 +96,7 @@ function App() {
     );
   }
 
-    
-
-
-
-
-
-
  //testei
-
 
 
 
@@ -122,6 +115,7 @@ function App() {
         <p>{sata}</p>
         <p>{Savedtime}</p>
         <Savedtime/>
+       
         
 
         

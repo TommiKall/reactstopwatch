@@ -48,7 +48,7 @@ const Saver = () => {
         placeholder="Text.."
       />
 
-      <button className="buttonsaver" onClick={() => saveItem()}>Save</button>  
+      <button className="buttonsaver" onClick={() => saveItem()}>Save</button> 
       
 
       <button className="buttonsaver" onClick={() => setItems([])}>Reset</button>
