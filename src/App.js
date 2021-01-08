@@ -100,21 +100,18 @@ function App() {
 
 
 
-
+//save={save} btn status
 
   return (
     <div>                 
           <div className="stopwatch">
              <h1 className="otsikko">Stopwatch/Tommi Kalliomäki</h1>
               < Display time={time}/>
-              <Btn status={status} resume= {resume} reset={reset} stop={stop} save={save} start={start}/>
+              <Btn status={status} resume= {resume} reset={reset} stop={stop}  start={start}/>
             </div>
 
       <div className="saver">       
         < Saver /> 
-        <p>{sata}</p>
-        <p>{Savedtime}</p>
-        <Savedtime/>
        
         
 

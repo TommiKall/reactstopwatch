@@ -23,7 +23,7 @@ function Btn(props) {
         <div>
             <button className="button" onClick={props.resume}>Start</button>
             <button className="button" onClick={props.reset}>Reset</button>
-            <button className="button" onClick={props.save}>Save</button>
+            
             
         </div> : ""
         }
@@ -34,5 +34,5 @@ function Btn(props) {
      
   );
 }
-
+//<button className="button" onClick={props.save}>Save</button>
 export default Btn;

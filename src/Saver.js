@@ -40,7 +40,7 @@ const Saver = () => {
 
   return (
     <div className="otsikko">
-      <h3>Identifier for time</h3>
+      <h3>Saver</h3>
 
       <input className="input"
         value={value}
